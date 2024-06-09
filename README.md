@@ -1,14 +1,11 @@
-# CS 224N Final Project 2024 - Multitask BERT
-[link to project poster](Task_specific_attention.pdf)
+# An exploration on Wasserstein GAN and a f-GAN
+## 2024Spring CS231N Final Project
+[link to project poster](CS231N_project_poster.pdf)
 
-[link to project report](Task_specific_attention_report.pdf)
+[link to project report](CS231N_project_report.pdf)
 
 ## Abstract
-In this project I propose and explore task-specific attention mechanism, which takes BERT foundation model output and is intentionally overfitted for each task. Experiments proved that this mechanism can help to improve model performance when finetune data is relatively large. Corresponding training cost is not significantly higher compared to traditional finetunes. In this exploration, task-specific attention layers improve paraphrase detection accuracy from 0.551 to 0.842, with a 10% increase of finetune training time.
-
+Generative Adversarial Nets (GAN) provides a straightforward yet effective method for image generation after learning from training data, and researchers have proposed variants under GAN framework. In this project I compare performances between Vanilla GAN, Wasserstein GAN (WGAN) and $f$-GAN, as the later two extend and generalize GAN implementations. Experimental results show that compared to vanilla GAN, WGAN and Pearson $\chi^2$ $f$-GAN have similar capacities on learning data distributions and generating, given features extracted by convolutional networks. This project also explores hyper parameter tuning for WGAN and the results emphasize importance of gradient clipping threshold.
 ## Acknowledgement
 
-The BERT implementation part of the project was adapted from the "minbert" assignment developed at Carnegie Mellon University's [CS11-711 Advanced NLP](http://phontron.com/class/anlp2021/index.html),
-created by Shuyan Zhou, Zhengbao Jiang, Ritam Dutt, Brendon Boldt, Aditya Veerubhotla, and Graham Neubig.
-
-Parts of the code are from the [`transformers`](https://github.com/huggingface/transformers) library ([Apache License 2.0](./LICENSE)).
+Data preprocessing, discriminator, and generator designs and codes reuse corresponding parts in assignment #3 of 2024Spring CS231N class.   
